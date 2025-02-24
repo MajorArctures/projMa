@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre LIBRAS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #010f40;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-bottom: 40px; /* Espaçamento inferior */
+        }
+        header {
+            background-color: #fffef0;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #5986D9;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 13px;
+        }
+        nav a:hover {
+            background-color: #4A75C9;
+            border-radius: 5px;
+        }
+        .container {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            grid-template-rows: repeat(3, 1fr); /* 3 linhas */
+            gap: 20px;
+            padding: 20px;
+            margin: 0 150px;
+            padding-bottom: 40px; /* Adicionando padding para o espaço inferior */
+        }
+        
+        .box1 {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            grid-column: 1;
+            grid-row: 1 / span 3; /* Ocupa toda a coluna 1 */
+            height: 95%;
+            margin-bottom: 40px; /* Adicionando margem inferior */
+        }
+
+        .box1 h1 {
+            color: #010f40;
+            font-family: Times, serif;
+            font-size: 40px;
+            font-style: italic;
+            text-align: left;
+        }
+        .box1 p {
+            color: #000000;
+            text-align: justify;
+        }
+        .box2 {
+            background-color: #d0d0d0;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column: 2 / span 2; /* Ocupa coluna 2 e 3 */
+            grid-row: 1;
+        }
+        .box3 {
+            background-color: #d0d0d0;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column: 2;
+            grid-row: 2 / span 2; /* Ocupa coluna 2 e linhas 2 e 3 */
+        }
+        .box4 {
+            background-color: #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column: 3;
+            grid-row: 2 / span 2; /* Ocupa coluna 3 e linhas 2 e 3 */
+        }
+        footer {
+            text-align: center;
+            background-color: #5986D9;
+            color: #000000;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 13px;
+            padding: 10px 0;
+            margin-top: auto; /* Garante que o footer fique na parte inferior */
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin: 0 20px;
+            }
+            .box1, .box2, .box3, .box4 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <figure> 
+            <!--<img src="libras rodapé.webp" class="cabeçalhoimg">-->
+        </figure>
+    </header>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#quiz">QUIZ</a>
+        <a href="#tradutor">TRADUTOR</a>
+        <a href="#alfabeto">ALFABETO</a>
+    </nav>
+    <div class="container">
+        <div class="box1">
+            <h1>Libras: O que é?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, 
+                justo eget volutpat ullamcorper, ligula purus hendrerit sapien, 
+                vel euismod mi quam id purus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Officia tenetur corrupti, soluta officiis necessitatibus 
+                vel tempora? Doloribus, porro doloremque totam accusantium, distinctio necessitatibus amet, 
+                fuga adipisci ex quos rem dolor.
+               
+            </p>
+            <p>Sed ultricies sapien in arcu fermentum, nec scelerisque 
+                felis vestibulum. Mauris hendrerit feugiat nunc, non tincidunt lacus volutpat a.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, 
+                justo eget volutpat ullamcorper, ligula purus hendrerit sapien, 
+                vel euismod mi quam id purus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Officia tenetur corrupti, soluta officiis necessitatibus 
+                vel tempora? Doloribus, porro doloremque totam accusantium, distinctio necessitatibus amet, 
+                fuga adipisci ex quos rem dolor
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, 
+                justo eget volutpat ullamcorper, ligula purus hendrerit sapien, 
+                vel euismod mi quam id purus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+        <div class="box2">
+            <!-- Conteúdo do Box2 -->
+        </div>
+        <div class="box3">
+            <!-- Conteúdo do Box3 -->
+        </div>
+        <div class="box4">
+            <!-- Conteúdo do Box4 -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; IFSP - Campus Campos do Jordão.<br>Análise e Desenvolvimento de Sistemas - Projeto de Extensão 4º SEM - 2025</p>
+    </footer>
+</body>
+</html>
