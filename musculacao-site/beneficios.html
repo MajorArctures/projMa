@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios - FitLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FitLife</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="beneficios.html" class="nav-link active">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="treinos.html" class="nav-link">Treinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nutricao.html" class="nav-link">Nutrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Benefícios da Musculação</h1>
+                <p>Descubra como a musculação pode transformar sua saúde física e mental</p>
+            </div>
+        </section>
+
+        <section class="benefits-detailed">
+            <div class="container">
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/forçamuscular-colorido.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Fortalecimento Muscular</h3>
+                        <p>A musculação promove o desenvolvimento da força e massa muscular, melhorando a capacidade funcional para atividades diárias e prevenindo a sarcopenia relacionada ao envelhecimento.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/saude-ossea-colorido.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Saúde Óssea</h3>
+                        <p>O treino de resistência estimula a formação óssea, aumentando a densidade mineral óssea e reduzindo o risco de osteoporose e fraturas.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/cardiovascular-sistema-colorido.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Sistema Cardiovascular</h3>
+                        <p>Melhora a saúde do coração, reduz a pressão arterial, diminui o colesterol ruim (LDL) e aumenta o colesterol bom (HDL).</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/metabolismo-fast-colorido-beneficios.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Metabolismo</h3>
+                        <p>Acelera o metabolismo basal, aumentando o gasto calórico mesmo em repouso, facilitando o controle e perda de peso.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/saúde-mental-colorido-2.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Saúde Mental</h3>
+                        <p>Libera endorfinas, reduz o stress, ansiedade e depressão, melhorando o humor e a autoestima.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/qualidade-sono-colorido.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Qualidade do Sono</h3>
+                        <p>Melhora a qualidade do sono, ajudando a adormecer mais rapidamente e ter um sono mais reparador.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scientific-evidence">
+            <div class="container">
+                <h2>Evidências Científicas</h2>
+                <div class="evidence-content">
+                    <p>Estudos científicos comprovam que a prática regular de musculação traz benefícios significativos para a saúde. Pesquisas mostram que apenas 2-3 sessões semanais já são suficientes para obter melhorias substanciais na força, composição corporal e bem-estar geral.</p>
+                    
+                    <div class="stats-cards">
+                        <div class="stat-card">
+                            <h3>30%</h3>
+                            <p>Redução no risco de doenças cardiovasculares</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>25%</h3>
+                            <p>Melhoria na densidade óssea</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>40%</h3>
+                            <p>Aumento na força muscular em 12 semanas</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>20%</h3>
+                            <p>Redução nos sintomas de depressão</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Galeria de Transformações</h2>
+                <p>Veja exemplos inspiradores de transformações através da musculação</p>
+                <div class="image-gallery" id="image-gallery">
+                    <div class="gallery-item" onclick="openGallery(0)">
+                        <div class="placeholder-image">
+                            <img src="images/transformação-1.jfif" style="width: 150px; height: 150px;">
+                        </div>
+                        <p>Transformação 1</p>
+                    </div>
+                    <div class="gallery-item" onclick="openGallery(1)">
+                        <div class="placeholder-image">
+                            <img src="images/transformação-2.jpg" style="width: 150px; height: 150px;">
+                        </div>
+                        <p>Transformação 2</p>
+                    </div>
+                    <div class="gallery-item" onclick="openGallery(2)">
+                        <div class="placeholder-image">
+                            <img src="images/transformação-4.jpg" style="width: 150px; height: 150px;">
+                        </div>
+                        <p>Transformação 3</p>
+                    </div>
+                    <div class="gallery-item" onclick="openGallery(3)">
+                        <div class="placeholder-image">
+                            <img src="images/transformação-3.jfif" style="width: 150px; height: 150px;">
+                        </div>
+                        <p>Transformação 4</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal da Galeria -->
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content gallery-modal-content">
+            <span class="close">&times;</span>
+            <div class="gallery-display">
+                <div class="gallery-image" id="gallery-image">
+                    <div class="placeholder-image large">
+                        
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <h3 id="gallery-title">Transformação Inspiradora</h3>
+                    <p id="gallery-description">Exemplo de transformação através da dedicação e consistência nos treinos de musculação.</p>
+                </div>
+            </div>
+            <div class="gallery-controls">
+                <button onclick="previousImage()" class="btn btn-secondary">← Anterior</button>
+                <button onclick="nextImage()" class="btn btn-secondary">Próxima →</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitLife. Todos os direitos reservados. Desenvolvido para promover saúde e bem-estar.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

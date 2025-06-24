@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos - FitLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FitLife</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="beneficios.html" class="nav-link">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="treinos.html" class="nav-link active">Treinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nutricao.html" class="nav-link">Nutrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Programas de Treino</h1>
+                <p>Rotinas eficazes para diferentes níveis e objetivos</p>
+            </div>
+        </section>
+
+        <section class="workout-programs">
+            <div class="container">
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <h3>Iniciante</h3>
+                        <div class="program-icon">
+                            <img src="images/iniciante-colorido.png" style="width: 150px; height: 150px;">
+                        </div>
+                        <p>Programa ideal para quem está começando na musculação</p>
+                        <ul>
+                            <li>3x por semana</li>
+                            <li>Treino full body</li>
+                            <li>Foco na técnica</li>
+                            <li>8-12 repetições</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="showWorkoutDetails('iniciante')">Ver Detalhes</button>
+                    </div>
+
+                    <div class="program-card">
+                        <h3>Intermediário</h3>
+                        <div class="program-icon">
+                            <img src="images/intermediario-colorido-2.png" style="width: 150px; height: 150px;">
+                        </div>
+                        <p>Para quem já tem experiência e quer evoluir</p>
+                        <ul>
+                            <li>4x por semana</li>
+                            <li>Divisão por grupos musculares</li>
+                            <li>Aumento de intensidade</li>
+                            <li>6-10 repetições</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="showWorkoutDetails('intermediario')">Ver Detalhes</button>
+                    </div>
+
+                    <div class="program-card">
+                        <h3>Avançado</h3>
+                        <div class="program-icon">
+                            <img src="images/avancado-colorido-2.png" style="width: 150px; height: 150px;">
+                        </div>
+                        <p>Treinos intensos para atletas experientes</p>
+                        <ul>
+                            <li>5-6x por semana</li>
+                            <li>Técnicas avançadas</li>
+                            <li>Alta intensidade</li>
+                            <li>4-8 repetições</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="showWorkoutDetails('avancado')">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exercise-guide">
+            <div class="container">
+                <h2>Guia de Exercícios Fundamentais</h2>
+                <div class="exercises-grid">
+                    <div class="exercise-card">
+                        <h4>Agachamento</h4>
+                        <div class="exercise-icon">
+                            <img src="images/treino-agachamento.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <p><strong>Músculos:</strong> Quadríceps, glúteos, core</p>
+                        <p><strong>Dica:</strong> Mantenha o peito erguido e desça até os joelhos formarem 90°</p>
+                    </div>
+
+                    <div class="exercise-card">
+                        <h4>Supino</h4>
+                        <div class="exercise-icon">
+                            <img src="images/treino-supino.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <p><strong>Músculos:</strong> Peitoral, tríceps, deltoides</p>
+                        <p><strong>Dica:</strong> Controle a descida e empurre com força controlada</p>
+                    </div>
+
+                    <div class="exercise-card">
+                        <h4>Levantamento Terra</h4>
+                        <div class="exercise-icon">
+                            <img src="images/treino-levantamento-terra.jfif" style="width: 75px; height: 75px;">
+                        </div>
+                        <p><strong>Músculos:</strong> Posterior, glúteos, core</p>
+                        <p><strong>Dica:</strong> Mantenha as costas retas e levante com as pernas</p>
+                    </div>
+
+                    <div class="exercise-card">
+                        <h4>Desenvolvimento</h4>
+                        <div class="exercise-icon">
+                            <img src="images/treino-desenvolvimento.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <p><strong>Músculos:</strong> Deltoides, tríceps</p>
+                        <p><strong>Dica:</strong> Empurre verticalmente mantendo o core ativado</p>
+                    </div>
+
+                    <div class="exercise-card">
+                        <h4>Remada</h4>
+                        <div class="exercise-icon">
+                            <img src="images/treino-remada.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <p><strong>Músculos:</strong> Dorsais, bíceps, romboides</p>
+                        <p><strong>Dica:</strong> Puxe os cotovelos para trás, não para os lados</p>
+                    </div>
+
+                    <div class="exercise-card">
+                        <h4>Flexão</h4>
+                        <div class="exercise-icon">
+                            <img src="images/treino-flexão-2.png" style="width: 100px; height: 60px;">
+                        </div>
+                        <p><strong>Músculos:</strong> Peitoral, tríceps, core</p>
+                        <p><strong>Dica:</strong> Mantenha o corpo alinhado da cabeça aos pés</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="progression-table">
+            <div class="container">
+                <h2>Tabela de Progressão de Cargas</h2>
+                <p>Exemplo de progressão semanal para exercícios básicos (kg)</p>
+                <div class="table-container">
+                    <table class="progression-table-content">
+                        <thead>
+                            <tr>
+                                <th>Exercício</th>
+                                <th>Semana 1</th>
+                                <th>Semana 2</th>
+                                <th>Semana 3</th>
+                                <th>Semana 4</th>
+                                <th>Semana 5</th>
+                                <th>Semana 6</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Agachamento</td>
+                                <td>40kg</td>
+                                <td>42.5kg</td>
+                                <td>45kg</td>
+                                <td>47.5kg</td>
+                                <td>50kg</td>
+                                <td>52.5kg</td>
+                            </tr>
+                            <tr>
+                                <td>Supino</td>
+                                <td>30kg</td>
+                                <td>32.5kg</td>
+                                <td>35kg</td>
+                                <td>37.5kg</td>
+                                <td>40kg</td>
+                                <td>42.5kg</td>
+                            </tr>
+                            <tr>
+                                <td>Levantamento Terra</td>
+                                <td>50kg</td>
+                                <td>55kg</td>
+                                <td>60kg</td>
+                                <td>65kg</td>
+                                <td>70kg</td>
+                                <td>75kg</td>
+                            </tr>
+                            <tr>
+                                <td>Desenvolvimento</td>
+                                <td>20kg</td>
+                                <td>22.5kg</td>
+                                <td>25kg</td>
+                                <td>27.5kg</td>
+                                <td>30kg</td>
+                                <td>32.5kg</td>
+                            </tr>
+                            <tr>
+                                <td>Remada</td>
+                                <td>35kg</td>
+                                <td>37.5kg</td>
+                                <td>40kg</td>
+                                <td>42.5kg</td>
+                                <td>45kg</td>
+                                <td>47.5kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">*Valores de referência para iniciantes. Ajuste conforme sua capacidade individual.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Detalhes do Treino -->
+    <div id="workout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="workout-details">
+                <!-- Conteúdo será inserido dinamicamente via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitLife. Todos os direitos reservados. Desenvolvido para promover saúde e bem-estar.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

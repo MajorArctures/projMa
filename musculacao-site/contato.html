@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - FitLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FitLife</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="beneficios.html" class="nav-link">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="treinos.html" class="nav-link">Treinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nutricao.html" class="nav-link">Nutrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link active">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <p>Tire suas dúvidas e compartilhe suas sugestões conosco</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Fale Conosco</h2>
+                        <p>Estamos aqui para ajudar você em sua jornada de saúde e bem-estar. Entre em contato conosco através do formulário ao lado ou pelos nossos canais de atendimento.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="images/contato-email-2.jpg" style="width: 50px; height: 50px;">
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contato@fitlife.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="images/contato-whatsapp.png" style="width: 50px; height: 50px; background-color: white;">
+                                </div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>(11) 99999-9999</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="images/contato-horario.jpg" style="width: 50px; height: 50px;">
+                                </div>
+                                <div>
+                                    <h4>Horário de Atendimento</h4>
+                                    <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="images/contato-localização.webp" style="width: 50px; height: 50px; background-color: white;">
+                                </div>
+                                <div>
+                                    <h4>Localização</h4>
+                                    <p>São Paulo, SP - Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" onsubmit="return validateForm(event)">
+                            <h3>Envie sua Mensagem</h3>
+                            
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" required>
+                                <span class="error-message" id="nome-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                                <span class="error-message" id="telefone-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="assunto">Assunto *</label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="duvida-treino">Dúvida sobre Treino</option>
+                                    <option value="duvida-nutricao">Dúvida sobre Nutrição</option>
+                                    <option value="sugestao">Sugestão</option>
+                                    <option value="parceria">Parceria</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                                <span class="error-message" id="assunto-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nivel-experiencia">Nível de Experiência</label>
+                                <select id="nivel-experiencia" name="nivel-experiencia">
+                                    <option value="">Selecione seu nível</option>
+                                    <option value="iniciante">Iniciante</option>
+                                    <option value="intermediario">Intermediário</option>
+                                    <option value="avancado">Avançado</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem *</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva sua dúvida, sugestão ou comentário..."></textarea>
+                                <span class="error-message" id="mensagem-error"></span>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Desejo receber dicas e novidades por email
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="termos" name="termos" required>
+                                    <span class="checkmark"></span>
+                                    Concordo com os termos de uso e política de privacidade *
+                                </label>
+                                <span class="error-message" id="termos-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Enviar Mensagem</span>
+                                <span class="btn-loading" style="display: none;">Enviando...</span>
+                            </button>
+                        </form>
+                        
+                        <div id="form-success" class="success-message" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3>Mensagem Enviada com Sucesso!</h3>
+                            <p>Obrigado pelo seu contato. Responderemos em breve!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Quantas vezes por semana devo treinar?</h4>
+                        <p>Para iniciantes, recomendamos 3 vezes por semana. Intermediários podem treinar 4-5 vezes, e avançados até 6 vezes por semana.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Preciso de suplementos para ter resultados?</h4>
+                        <p>Não são obrigatórios. Uma alimentação equilibrada é a base. Suplementos podem ajudar, mas não substituem uma boa dieta.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Quanto tempo para ver resultados?</h4>
+                        <p>Os primeiros resultados aparecem em 4-6 semanas. Mudanças significativas levam de 3-6 meses com consistência.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Posso treinar todos os dias?</h4>
+                        <p>O descanso é fundamental para a recuperação muscular. Recomendamos pelo menos 1-2 dias de descanso por semana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitLife. Todos os direitos reservados. Desenvolvido para promover saúde e bem-estar.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

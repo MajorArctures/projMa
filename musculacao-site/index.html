@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Saúde e Bem-Estar através da Musculação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FitLife</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="beneficios.html" class="nav-link">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="treinos.html" class="nav-link">Treinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nutricao.html" class="nav-link">Nutrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Transforme sua Vida através da Musculação</h1>
+                    <p>Descubra como a musculação pode revolucionar sua saúde física e mental, proporcionando bem-estar e qualidade de vida.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="showWelcomeMessage()">Começar Jornada</button>
+                        <button class="btn btn-secondary" onclick="openIMCCalculator()">Calcular IMC</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <img src="images/musculaca-index-colorido.png" style="width: 250px; height: 250px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Por que escolher a Musculação?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/força-colorido.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Força e Resistência</h3>
+                        <p>Desenvolva força muscular e resistência física para atividades do dia a dia.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                             <img src="images/cardiovascular-colorido.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Saúde Cardiovascular</h3>
+                        <p>Melhore a saúde do coração e reduza riscos de doenças cardiovasculares.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/bemestarmental-colorido.png" style="width: 75px; height: 75px;">
+                       </div>
+                        <h3>Bem-estar Mental</h3>
+                        <p>Reduza o stress e melhore o humor através da liberação de endorfinas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/metabolismo-fast-colorido.png" style="width: 75px; height: 75px;">
+                        </div>
+                        <h3>Metabolismo Acelerado</h3>
+                        <p>Aumente o metabolismo e queime mais calorias mesmo em repouso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <h2>Dicas Essenciais para Iniciantes</h2>
+                <ol class="tips-list">
+                    <li>Comece sempre com aquecimento adequado (5-10 minutos)</li>
+                    <li>Foque na técnica correta antes de aumentar a carga</li>
+                    <li>Mantenha uma frequência de treino consistente (3-4x por semana)</li>
+                    <li>Hidrate-se adequadamente antes, durante e após o treino</li>
+                    <li>Respeite os períodos de descanso entre séries e treinos</li>
+                    <li>Combine exercícios compostos com exercícios isolados</li>
+                    <li>Procure orientação profissional para elaborar seu programa</li>
+                    <li>Mantenha uma alimentação equilibrada e rica em proteínas</li>
+                    <li>Durma adequadamente para permitir a recuperação muscular</li>
+                    <li>Seja paciente - resultados consistentes levam tempo</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para Calculadora de IMC -->
+    <div id="imc-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Calculadora de IMC</h3>
+            <div class="imc-form">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" placeholder="Ex: 70" step="0.1">
+                
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+                
+                <button onclick="calcularIMC()" class="btn btn-primary">Calcular</button>
+                
+                <div id="resultado-imc"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitLife. Todos os direitos reservados. Desenvolvido para promover saúde e bem-estar.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
